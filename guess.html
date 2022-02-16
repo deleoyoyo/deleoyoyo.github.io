@@ -12,7 +12,10 @@
 
 <button class="button1" onclick="newRandomGuess()">new random number!</button>
 <button class="button2" id="button" onclick="guessTheNumber()">guess!</button>
-<button class="button3" onclick="userGivesup()">give up?</button>
+<button class="button3" id="enables" onclick="userGivesup()">give up?</button>
+
+<p id="demo"></p>
+<h4 id="lose"></h4>
 
 
 <style>
@@ -58,8 +61,6 @@
 
 
 </style>
-<p id="demo"></p>
-<h4 id="lose"></h4>
 <script>
   var number;
 
@@ -83,7 +84,7 @@
     return document.getElementById("age").value;
   }
 
-  // checks that the number matches the guess!
+  // checks that the number matches the guess!anwser
   function guessTheNumber() {
     let age = getInputAge();
     let attempts = userAttempts();
@@ -97,6 +98,8 @@
     document.getElementById("button").disabled = true;
     document.getElementById("lose").innerHTML = "The Number was: " + number + " click on the new random number button to play again!";
   }
+
+
 </script>
 </body>
 </html>
