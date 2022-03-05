@@ -6,6 +6,7 @@
 <h2>JavaScript Comparison</h2>
 
 <h3>Welcome to number guessing</h3>
+<h6>Hint! the number is always between 0 - 100</h6>
 
 <p>Attempts: <a id="clicks">0</a></p>
 <input id="age" value="5" />
@@ -72,7 +73,7 @@
 
   // returns a random number to guess
   function newRandomGuess() {
-  	number = Math.floor(Math.random() * 26);
+  	number = Math.floor(Math.random() * 101);
     document.getElementById("button").disabled = false;
     console.log("new random number is " + number);
     console.log("if you are reading this, DON'T CHEAT");
