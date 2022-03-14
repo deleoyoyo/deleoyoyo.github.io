@@ -92,7 +92,7 @@ coinsPS;
 function getAlotcoin() {
 if (coins >= 1500){
 coinsPS += 10;
-coins = 0;
+coins -= coins;
 
 }
 else{
@@ -109,7 +109,7 @@ function TotalRebirths(){
 
 if (coins >= 150){
 coinsPS += 1;
-coins = 0;
+coins -= coins;
 
 }
 else{
@@ -126,7 +126,7 @@ coins += coinsPS;
 function getSupercoin(){
   if (coins >= 3750){
   coinsPS += 25;
-  coins = 0;
+  coins -= coins;
 
   }
   else{
