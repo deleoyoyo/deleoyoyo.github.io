@@ -41,7 +41,7 @@
 
 <body>
 <h1>Coin Clicker</h1>
-<h5>*depending on how much rebirths you have is that much coins you get per second*</h5>
+<h5>*depending on how much rebirths you have is that much coins you get per second (and a half)*</h5>
 <h3 id="coins"></h3>
 <h3 id="coinsPS"></h3>
 <button class="block" onclick="gainCoin()">cilck me</button>
@@ -100,16 +100,16 @@ alert("Sorry, you don't have enough coins.")
 }
 setInterval(function TotalRebirths(){
 
-coins += coinsPS;
+coins += TotalRebirths;
 
-}, 1000)
+}, 1500)
 }
 
 function TotalRebirths(){
 
 if (coins >= 150){
 coinsPS += 1;
-coins -= coins;
+coins = 0;
 
 }
 else{
@@ -119,7 +119,7 @@ setInterval(function TotalRebirths(){
 
 coins += coinsPS;
 
-}, 1000)
+}, 1500)
 
 }
 // mega rebirth function
@@ -136,7 +136,7 @@ function getSupercoin(){
 
   coins += coinsPS;
 
-  }, 1000)
+}, 1500)
 
 }
 
