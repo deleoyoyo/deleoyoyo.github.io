@@ -46,7 +46,7 @@
 <h3 id="coinsPS"></h3>
 <button class="block" onclick="gainCoin()">cilck me</button>
 <h2>1 rebirth = 150 clicks</h2>
-<button class="reset" onclick="getCoinsPS()">rebirth</button>
+<button class="reset" onclick="TotalRebirths()">rebirth</button>
 <h2>10 rebirths = 1500 clicks</h2>
 <button class="reset" onclick="getAlotcoin()">super rebirth</button>
 <h2>25 rebirths = 3750 clicks</h2>
@@ -83,7 +83,7 @@ document.getElementById("coins").innerHTML = "Coins: " + coins;
 })
 
 
-setInterval(function renderCoinsPS() {
+setInterval(function renderTotalRebirths() {
 
 document.getElementById("coinsPS").innerHTML = "Rebirths: " +
 coinsPS;
@@ -98,14 +98,14 @@ coins -= coins;
 else{
 alert("Sorry, you don't have enough coins.")
 }
-setInterval(function coinPS(){
+setInterval(function TotalRebirths(){
 
 coins += coinsPS;
 
 }, 1000)
 }
 
-function getCoinsPS(){
+function TotalRebirths(){
 
 if (coins >= 150){
 coinsPS += 1;
@@ -115,7 +115,7 @@ coins -= coins;
 else{
 alert("Sorry, you don't have enough coins.")
 }
-setInterval(function coinPS(){
+setInterval(function TotalRebirths(){
 
 coins += coinsPS;
 
@@ -126,13 +126,13 @@ coins += coinsPS;
 function getSupercoin(){
   if (coins >= 3750){
   coinsPS += 25;
-  coins -= coins;
+  coins = 0;
 
   }
   else{
   alert("Sorry, you don't have enough coins.")
   }
-  setInterval(function coinPS(){
+  setInterval(function TotalRebirths(){
 
   coins += coinsPS;
 
