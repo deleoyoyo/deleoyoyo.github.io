@@ -55,18 +55,24 @@
 <button class="reset" onclick="getSupercoin()">mega rebirth</button>
 <h2>50 rebirths = 7500 clicks</h2>
 <button class="reset" onclick="myfunction()">ultra rebirth</button>
+<h2>100 rebirths = 15000 clicks</h2>
+<button class="reset" onclick="yourfunction()">best rebirth</button>
 
-<h1>ranks</h1>
+<h1>coin ranks</h1>
 <strong>
 <br>noob = 1+ coins</br>
-<br>starter = 100+ coins</br>
-<br>normal = 450+ coins</br>
-<br>pro = 1000+ coins</br>
-<br>rich = 350k+ coins</br>
-<br>spam player = 100k+ coins</br>
-<br>legendary = 250k+ coins</br>
-<br>button smasher = 500k+ coins<br>
-<br>clicking overlord = 750k+ coins</br>
+<br>starter = 1000+ coins</br>
+<br>normal = 35k+ coins</br>
+<br>pro = 100k+ coins</br>
+<br>rich = 700k+ coins</br>
+<br>spam player = 2M+ coins</br>
+<br>legendary = 5M+ coins</br>
+<br>button smasher = 12M+ coins<br>
+<br>clicking overlord = 75M+ coins</br>
+<br>godlike = 500M+ coins</br>
+<br>button slayer = 1B+ coins</br>
+<br>king of clicks = 50B+ coins</br>
+<br>THE NEXT CLIKER GOD = 1T coins</br>
 </strong>
 
 <script>
@@ -107,7 +113,7 @@ setInterval(function coinPS(){
 
 coins += coinsPS;
 
-}, 1150)
+}, 1200)
 }
 
 function getCoinsPS(){
@@ -124,7 +130,7 @@ setInterval(function coinPS(){
 
 coins += coinsPS;
 
-}, 1150)
+}, 1200)
 
 }
 
@@ -141,7 +147,7 @@ function getSupercoin(){
 
   coins += coinsPS;
 
-}, 1150)
+}, 1200)
 
 }
 
@@ -158,7 +164,24 @@ function myfunction(){
 
   coins += coinsPS;
 
-}, 1150)
+}, 1200)
+
+}
+
+function yourfunction(){
+  if (coins >= 15000){
+  coinsPS += 100;
+  coins -= coins;
+
+  }
+  else{
+  alert("Sorry, you don't have enough coins.")
+  }
+  setInterval(function coinPS(){
+
+  coins += coinsPS;
+
+}, 1200)
 
 }
 
