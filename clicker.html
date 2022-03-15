@@ -4,8 +4,9 @@
 
 <style>
   .block:active {
-    background-color: #DC143C;
+    background-color: #00BFFF
     box-shadow: 0 5px #666;
+    transform: translateY(4px);
   }
 
 .reset {
@@ -20,18 +21,21 @@
   text-align: center;
 }
 
+.block:hover {
+  background-color: #ddd;
+}
 .block {
   display: block;
   width: 100%;
   border: none;
-  background-color: #DC143C;
+  background-color: #800000;
   color: white;
   padding: 14px 28px;
   font-size: 16px;
   cursor: pointer;
   text-align: center;
-
 }
+
 
 </style>
 
@@ -46,22 +50,25 @@
 <h3 id="coinsPS"></h3>
 <button class="block" onclick="gainCoin()">cilck me</button>
 <h2>1 rebirth = 150 clicks</h2>
-<button class="reset" onclick="TotalRebirths()">rebirth</button>
+<button class="reset" onclick="getCoinsPS()">rebith</button>
 <h2>10 rebirths = 1500 clicks</h2>
 <button class="reset" onclick="getAlotcoin()">super rebirth</button>
 <h2>25 rebirths = 3750 clicks</h2>
 <button class="reset" onclick="getSupercoin()">mega rebirth</button>
+<h2>50 rebirths = 7500 clicks</h2>
+<button class="reset" onclick="myfunction()">ultra rebirth</button>
+
 <h1>ranks</h1>
 <strong>
-<br>noob = 1 - 99 coins</br>
-<br>starter = 100 - 449 coins</br>
-<br>normal = 450 - 999 coins</br>
-<br>pro = 1000 - 3499 coins</br>
-<br>rich = 3500 - 9999 coins</br>
-<br>spam player = 10k - 24.9k coins</br>
-<br>legendary = 25k - 49.9k coins</br>
-<br>button smasher = 50k - 74.9k coins<br>
-<br>clicking overlord = 75k - 99.9k coins</br>
+<br>noob = 1+ coins</br>
+<br>starter = 100+ coins</br>
+<br>normal = 450+ coins</br>
+<br>pro = 1000+ coins</br>
+<br>rich = 350k+ coins</br>
+<br>spam player = 100k+ coins</br>
+<br>legendary = 250k+ coins</br>
+<br>button smasher = 500k+ coins<br>
+<br>clicking overlord = 750k+ coins</br>
 </strong>
 
 <script>
@@ -83,7 +90,7 @@ document.getElementById("coins").innerHTML = "Coins: " + coins;
 })
 
 
-setInterval(function renderTotalRebirths() {
+setInterval(function renderCoinsPS() {
 
 document.getElementById("coinsPS").innerHTML = "Rebirths: " +
 coinsPS;
@@ -98,14 +105,14 @@ coins -= coins;
 else{
 alert("Sorry, you don't have enough coins.")
 }
-setInterval(function TotalRebirths(){
+setInterval(function coinPS(){
 
-coins += TotalRebirths;
+coins += coinsPS;
 
 }, 1000)
 }
 
-function TotalRebirths(){
+function getCoinsPS(){
 
 if (coins >= 150){
 coinsPS += 1;
@@ -115,14 +122,14 @@ coins -= coins;
 else{
 alert("Sorry, you don't have enough coins.")
 }
-setInterval(function TotalRebirths(){
+setInterval(function coinPS(){
 
 coins += coinsPS;
 
 }, 1000)
 
 }
-// mega rebirth function
+
 function getSupercoin(){
   if (coins >= 3750){
   coinsPS += 25;
@@ -132,11 +139,28 @@ function getSupercoin(){
   else{
   alert("Sorry, you don't have enough coins.")
   }
-  setInterval(function TotalRebirths(){
+  setInterval(function coinPS(){
 
   coins += coinsPS;
 
-}, 1000)
+  }, 1000)
+
+}
+
+function myfunction(){
+  if (coins >= 7500){
+  coinsPS += 50;
+  coins -= coins;
+
+  }
+  else{
+  alert("Sorry, you don't have enough coins.")
+  }
+  setInterval(function coinPS(){
+
+  coins += coinsPS;
+
+  }, 1000)
 
 }
 
