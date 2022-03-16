@@ -48,31 +48,57 @@
 <h3 id="coinsPS"></h3>
 <button class="block" onclick="gainCoin()">cilck me</button>
 <h2>1 rebirth = 150 clicks</h2>
-<button class="reset" onclick="getCoinsPS()">rebirth</button>
+<button class="reset" onclick="getCoinsPS()">1 rebirth</button>
 <h2>10 rebirths = 1500 clicks</h2>
-<button class="reset" onclick="getAlotcoin()">super rebirth</button>
+<button class="reset" onclick="getAlotcoin()">10 rebirths</button>
 <h2>25 rebirths = 3750 clicks</h2>
-<button class="reset" onclick="getSupercoin()">mega rebirth</button>
+<button class="reset" onclick="getSupercoin()">25 rebirths</button>
 <h2>50 rebirths = 7500 clicks</h2>
-<button class="reset" onclick="myfunction()">ultra rebirth</button>
+<button class="reset" onclick="myfunction()">50 rebirths</button>
 <h2>100 rebirths = 15000 clicks</h2>
-<button class="reset" onclick="yourfunction()">best rebirth</button>
-
+<button class="reset" onclick="yourfunction()">100 rebirths</button>
+<h2>250 rebirths = 37500 clicks</h2>
+<button class="reset" onclick="ourfunction()">250 rebirths</button>
+<h2>500 rebirths = 75000 clicks</h2>
+<button class="reset" onclick="superfunction()">500 rebirths</button>
+<h2>1000 rebirths = 150000 clicks</h2>
+<button class="reset" onclick="BOSSfunction()">1000 rebirths</button>
+<h2>5000 rebirths = 750000 clicks</h2>
+<button class="reset" onclick="TBOSSfunction()">5000 rebirths</button>
 <h1>coin ranks</h1>
 <strong>
 <br>noob = 1+ coins</br>
 <br>starter = 1000+ coins</br>
 <br>normal = 35k+ coins</br>
-<br>pro = 100k+ coins</br>
-<br>rich = 700k+ coins</br>
-<br>spam player = 2M+ coins</br>
-<br>legendary = 5M+ coins</br>
-<br>button smasher = 12M+ coins<br>
-<br>clicking overlord = 75M+ coins</br>
-<br>godlike = 500M+ coins</br>
-<br>button slayer = 1B+ coins</br>
-<br>king of clicks = 50B+ coins</br>
+<br>pro = 500k+ coins</br>
+<br>rich = 1M+ coins</br>
+<br>spam player = 12M+ coins</br>
+<br>legendary = 27M+ coins</br>
+<br>button smasher = 80M+ coins<br>
+<br>clicking overlord = 100M+ coins</br>
+<br>godlike = 1B+ coins</br>
+<br>button slayer = 14B+ coins</br>
+<br>king of clicks = 500B+ coins</br>
 <br>THE NEXT CLIKER GOD = 1T coins</br>
+<br>THE FIRST CLICKER = 780T coins</br>
+</strong>
+
+<h1>Rebirth ranks</h1>
+<strong>
+<br>noob = 1+ rebirths</br>
+<br>starter in life = 5+ rebirths</br>
+<br>normal lives = 25+ rebirths</br>
+<br>pro = 100+ rebirths</br>
+<br>generation looper = 230+ rebirths</br>
+<br>immortal = 350+ rebirths</br>
+<br>legendary = 500+ rebirths</br>
+<br>rebirth abuser = 1300+ rebirths<br>
+<br>rebirth overlord = 2500+ coins</br>
+<br>worthy = 10k+ rebirths</br>
+<br>king of rebirths in training = 35k+ rebirths</br>
+<br>king of rebirths = 82k+ rebirths</br>
+<br>THE NEXT rebirth GOD = 150k rebirths</br>
+<br>person in the last generation = 1M rebirths<br>
 </strong>
 
 <script>
@@ -184,6 +210,76 @@ function yourfunction(){
 }, 1200)
 
 }
+
+function ourfunction(){
+  if (coins >= 37500){
+  coinsPS += 250;
+  coins -= coins;
+
+  }
+  else{
+  alert("Sorry, you don't have enough coins.")
+  }
+  setInterval(function coinPS(){
+
+  coins += coinsPS;
+
+}, 1200)
+
+}
+
+function superfunction(){
+  if (coins >= 75000){
+  coinsPS += 500;
+  coins -= coins;
+
+  }
+  else{
+  alert("Sorry, you don't have enough coins.")
+  }
+  setInterval(function coinPS(){
+
+  coins += coinsPS;
+
+}, 1200)
+
+}
+
+function BOSSfunction(){
+  if (coins >= 150000){
+  coinsPS += 1000;
+  coins -= coins;
+
+  }
+  else{
+  alert("Sorry, you don't have enough coins.")
+  }
+  setInterval(function coinPS(){
+
+  coins += coinsPS;
+
+}, 1200)
+
+}
+
+function TBOSSfunction(){
+  if (coins >= 750000){
+  coinsPS += 5000;
+  coins -= coins;
+
+  }
+  else{
+  alert("Sorry, you don't have enough coins.")
+  }
+  setInterval(function coinPS(){
+
+  coins += coinsPS;
+
+}, 1200)
+
+}
+
+
 
 </script>
 </body>
