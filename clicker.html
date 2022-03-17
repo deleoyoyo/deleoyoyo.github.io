@@ -46,7 +46,7 @@
 <h5>*depending on how much rebirths you have is that much coins you get per second*</h5>
 <h3 id="coins"></h3>
 <h3 id="coinsPS"></h3>
-<button class="block" onclick="gainCoin()">cilck me</button>
+<button class="block" onclick="gainCoin()">click me</button>
 <h2>1 rebirth = 150 clicks</h2>
 <button class="reset" onclick="getCoinsPS()">1 rebirth</button>
 <h2>10 rebirths = 1500 clicks</h2>
@@ -80,7 +80,7 @@
 <br>godlike = 1B+ coins</br>
 <br>button slayer = 14B+ coins</br>
 <br>king of clicks = 500B+ coins</br>
-<br>THE NEXT CLIKER GOD = 10T+ coins</br>
+<br>THE NEXT CLIKER GOD = 15T+ coins</br>
 <br>THE CLICKER GOD = 72QA+ coins</br>
 </strong>
 
@@ -105,13 +105,12 @@
 <script>
 var coins = 0;
 var coinsPS = 0;
-var coinsPC = 1;
 
 
 function gainCoin() {
 
-coins += coinsPC;
-
+coins += 1;
+document.getElementById("coins").innerHTML = coins;
 }
 
 setInterval(function renderCoins() {
@@ -279,9 +278,6 @@ function TBOSSfunction(){
 }, 1200)
 
 }
-
-
-
 
 </script>
 </body>
